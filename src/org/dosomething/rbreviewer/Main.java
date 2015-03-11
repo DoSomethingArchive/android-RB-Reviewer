@@ -33,7 +33,7 @@ String[] attraction={
 "Physical Health 0",
 "Poverty 8",
 "Relationships 0",
-"Sex 0",
+"Sex 3",
 "Test Issue 0",
 "Violence 0"
 
