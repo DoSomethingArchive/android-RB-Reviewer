@@ -16,22 +16,21 @@ import android.os.Bundle;
 
 public class Splash extends Activity {
 
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-super.onCreate(savedInstanceState);
-setContentView(R.layout.splash);
-TimerTask task = new TimerTask() {
+	@Override
+		protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.splash);
+		TimerTask task = new TimerTask() {
 
-@Override
-public void run() {
-// TODO Auto-generated method stub
-finish();
-startActivity(new Intent(Splash.this, Login.class));
+			@Override
+			public void run() {
+			// TODO Auto-generated method stub
+			finish();
+			startActivity(new Intent(Splash.this, Login.class));
 }	
 };
 	
-Timer opening = new Timer();
-opening.schedule(task, 4000);
+			Timer opening = new Timer();
+			opening.schedule(task, 4000);
 }
 }
-
