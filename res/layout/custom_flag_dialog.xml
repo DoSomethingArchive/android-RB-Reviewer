@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/flagRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" >
+
+        <RadioButton
+            android:id="@+id/irrelevantRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:checked="true"
+            android:text="Irrelevant" />
+
+        <RadioButton
+            android:id="@+id/inappropriateRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Inappropriate" />
+
+        <RadioButton
+            android:id="@+id/UnrealisticQuantityRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Unrealistic Quantity" />
+
+        <RadioButton
+            android:id="@+id/deleteImageRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Delete this Image" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        
+
+        <Button
+            android:id="@+id/dialogButtonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:text="Cancel" />
+        
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:text="OK" />
+
+    </LinearLayout>
+
+</LinearLayout>

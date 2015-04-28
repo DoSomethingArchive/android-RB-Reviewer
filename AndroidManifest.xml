@@ -1,39 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="org.dosomething.rbreviewer"
-android:versionCode="6"
-android:versionName="1.0" >
+    package="org.dosomething.rbreviewer"
+    android:versionCode="6"
+    android:versionName="1.0" >
 
-<uses-sdk
-android:minSdkVersion="8"
-android:targetSdkVersion="21" />
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
 
-<application
-android:allowBackup="true"
-android:icon="@drawable/ic_launcher"
-android:label="@string/app_name"
-android:theme="@style/AppTheme" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-<activity
-android:name=".Splash"
-android:label="@string/app_name" >
-<intent-filter>
-<action android:name="android.intent.action.MAIN" />
+    <application
+        android:name="org.dosomething.rbreviewer.app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="org.dosomething.rbreviewer.activity.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<category android:name="android.intent.category.LAUNCHER" />
-</intent-filter>
-</activity>
-<activity android:name=".Cp1"></activity> 
-<activity android:name=".Cp10"></activity> 
-<activity android:name=".Cp2"></activity> 
-<activity android:name=".Cp3"></activity> 
-<activity android:name=".Cp4"></activity> 
-<activity android:name=".Cp5"></activity> 
-<activity android:name=".Cp6"></activity> 
-<activity android:name=".Cp7"></activity> 
-<activity android:name=".Cp8"></activity> 
-<activity android:name=".Cp9"></activity> 
-<activity android:name=".Login"></activity> 
-<activity android:name=".Main"></activity>
-</application>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.dosomething.rbreviewer.activity.SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.dosomething.rbreviewer.activity.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.dosomething.rbreviewer.activity.TermsDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+          <activity
+            android:name="org.dosomething.rbreviewer.activity.ReportBackDetail"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
 </manifest>
